@@ -1,19 +1,37 @@
 <?php
-    class payment extends hoteliga{
+    class reservationContract extends hoteliga{
 
-        //Yeni bir ödeme ekle
-        public function createPayment(){
+        //BookingId ile bir rezervasyonla ilişkili bir rezervasyon sözleşmesi alın.
+        public function reservationContractID(){
+
+            $reservationId = $_REQUEST["reservationId"];
+
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, "https://api.hoteliga.com/v1/ReservationContract".$reservationId);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+                "Authorization: Bearer ".$this->token,
+                "Content-Type: application/json"
+            ));
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            $response = curl_exec($ch);
+            curl_close($ch);
+            
+            if ($response === false) {
+                die('Curl error: ' . curl_error($ch));
+            }
+            
+            $data = json_decode($response);
+        
+            return $data;
+        }
+
+        //Rezervasyona rezervasyon sözleşmesi ekleme.
+        public function createReservationContract(){
 
             $data = array(
-                'paymentDate' => $_REQUEST["paymentDate"],
-                'reservationId' => $_REQUEST["reservationId"],
-                'invoiceId' => $_REQUEST["invoiceId"],
-                'paymentMethodId' => $_REQUEST["paymentMethodId"],
-                'amount' => $_REQUEST["amount"],
-                'amountCurrency' => $_REQUEST["amountCurrency"],
-                'currencyCode' => $_REQUEST["currencyCode"],
-                'exchangeRate' => $_REQUEST["exchangeRate"],
-                'notes' => $_REQUEST["notes"]
+                'ContractStart' => $_REQUEST["ContractStart"],
+                'ContractEnd' => $_REQUEST["ContractEnd"],
+                'ReservationId' => $_REQUEST["ReservationId"]
             );
             
             $headers = array(
@@ -22,7 +40,7 @@
                 'Authorization: Bearer '.$this->token,
             );
         
-            $url = "https://api.hoteliga.com/v1/Guest";
+            $url = "https://api.hoteliga.com/v1/ReservationContract";
             
             $ch = curl_init();
             curl_setopt_array($ch, array(
@@ -42,12 +60,12 @@
             $header_len = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
             $header = substr($result, 0, $header_len);
             $body = substr($result, $header_len);
-            
+
             if ($responseCode == '200') { 
                 $response = json_decode($body, true); 
                 $result = array(
                     'success' => true,
-                    'id' => $response['id'],
+                    'id' => $response,
                 );
             } else { 
                 $result = array(
@@ -60,19 +78,13 @@
         }
 
         //Mevcut bir ödemenin seçili verilerini güncelleyin
-        public function updatePayment(){
+        public function updateReservationContract(){
             
             $data = array(
                 'id' => $_REQUEST["id"],
-                'paymentDate' => $_REQUEST["paymentDate"],
-                'invoiceId' => $_REQUEST["invoiceId"],
-                'paymentMethodId' => $_REQUEST["paymentMethodId"],
-                'amount' => $_REQUEST["amount"],
-                'amountCurrency' => $_REQUEST["amountCurrency"],
-                'currencyCode' => $_REQUEST["currencyCode"],
-                'exchangeRate' => $_REQUEST["exchangeRate"],
-                'notes' => $_REQUEST["notes"]
-
+                'ContractStart' => $_REQUEST["ContractStart"],
+                'ContractEnd' => $_REQUEST["ContractEnd"],
+                'ReservationId' => $_REQUEST["ReservationId"]
             );
             
             $headers = array(
@@ -81,7 +93,7 @@
                 'Authorization: Bearer '.$this->token,
             );
         
-            $url = "https://api.hoteliga.com/v1/Payment";
+            $url = "https://api.hoteliga.com/v1/ReservationContract";
             
             $ch = curl_init();
             curl_setopt_array($ch, array(
@@ -100,11 +112,12 @@
             $header_len = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
             $header = substr($result, 0, $header_len);
             $body = substr($result, $header_len);
-            
+
             if ($responseCode == '200') { 
+                $response = json_decode($body, true); 
                 $response = array(
                     'success' => true,
-                    'code' => $responseCode,
+                    'code' => $response,
                 );
             } else { 
                 $response = array(
@@ -116,12 +129,10 @@
             return $response;
         }
 
-        //Bir ödemeyi sil
-        public function deletePayment(){
+        //Bir rezervasyondan bir rezervasyon sözleşmesini silin.
+        public function deleteReservationContract(){
 
-            $data = array(
-                'id' => $_REQUEST["id"]
-            );
+            $id = $_REQUEST["id"];
 
             $headers = array(
                 'Accept: application/json',
@@ -129,7 +140,7 @@
                 'Authorization: Bearer '.$this->token,
             );
         
-            $url = "https://api.hoteliga.com/v1/Payment/".$data["id"];
+            $url = "https://api.hoteliga.com/v1/ReservationContract/".$id;
             $ch = curl_init();
             curl_setopt_array($ch, array(
                 CURLOPT_URL => $url,

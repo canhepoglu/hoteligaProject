@@ -1,5 +1,7 @@
 <?php
     class guest extends hoteliga{
+
+        //Tüm misafirler için saklanan verileri alın
         public function guestList(){
 
             $ch = curl_init();
@@ -21,6 +23,8 @@
             return $data;
 
         }
+
+        //Bir konuk için saklanan verileri alın
         public function guestView(){
             $id = $_REQUEST["id"];
             
@@ -43,6 +47,8 @@
             return $data;
             
         }
+
+        //Bir rezervasyonun tüm misafirleri için saklanan verileri alın
         public function reservationView(){
             $reservationId = $_REQUEST["reservationId"];
             
@@ -64,6 +70,8 @@
         
             return $data;
         }
+
+        //yeni bir Konuk ekle
         public function addGuest(){
             $data = array(
                 'FirstName' => $_REQUEST["FirstName"],
@@ -112,6 +120,8 @@
             return $result;
 
         }
+
+        //Misafirin seçili verilerini güncelleyin.
         public function updateGuest(){
             
             $data = array(
@@ -161,6 +171,7 @@
             return $response;
         }
 
+        //Bir Misafiri Sil.
         public function deleteGuest(){
 
             $data = array(

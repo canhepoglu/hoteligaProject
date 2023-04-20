@@ -1,6 +1,7 @@
 <?php
     class reference extends hoteliga{
         
+        //Sistemdeki tüm ülkeler hakkında veri döndürür
         public function countries(){
             $languageCode = $_REQUEST["languageCode"];
 
@@ -24,6 +25,7 @@
 
         }
 
+        //Ülke koduna göre sistemdeki tüm iller hakkında veri döndürür
         public function provinces(){
             $countryCode = $_REQUEST["countryCode"];
             

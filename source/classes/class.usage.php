@@ -1,6 +1,7 @@
 <?php
     class usage extends hoteliga{
         
+        //API kullanım kaynağı, API sınırları ve kullanılan çağrılar hakkında bilgi sağlar.
         public function usage(){
 
             $ch = curl_init();

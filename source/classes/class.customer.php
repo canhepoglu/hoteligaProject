@@ -1,5 +1,8 @@
 <?php
+
     class customer extends hoteliga{
+
+        //Mülkün tüm Müşterileri için depolanan verileri alın
         public function customerList(){
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, "https://api.hoteliga.com/v1/Customers");
@@ -20,6 +23,8 @@
             return $data;
 
         }
+
+        //Mülkün bir Müşterisi için depolanan verileri alın
         public function customerView(){
             $id = $_REQUEST["id"];
             
@@ -42,6 +47,8 @@
             return $data;
             
         }
+
+        //Mülkün filtrelenmiş Müşterileri için depolanan verileri alın
         public function customers(){
             $data = array(
                 'CustomerId' => $_REQUEST["CustomerId"],
@@ -93,6 +100,8 @@
             }
             return $result;
         }
+
+        //Yeni bir Müşteri için kayıt oluştur
         public function addCustomer(){
             $data = array(
                 'lastName' => $_REQUEST["lastName"]
@@ -138,10 +147,12 @@
             }
             return $result;
         }
+
+        //Mevcut bir Müşterinin saklanan verilerini güncelleme
         public function updateCustomer(){
             $data = array(
-                'id' => $_REQUEST["id"] ?? null,
-                'lastName' => $_REQUEST["lastName"] ?? null
+                'id' => isset($_REQUEST["id"]) ? $_REQUEST["id"] : null,
+                'lastName' => isset($_REQUEST["lastName"]) ? $_REQUEST["lastName"] : null
             );
             
             $headers = array(
@@ -185,6 +196,7 @@
             return $response;
         }
 
+        //Bir Müşterinin kaydını silme
         public function deleteCustomer(){
 
             $data = array(

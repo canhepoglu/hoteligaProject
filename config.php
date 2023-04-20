@@ -4,7 +4,12 @@
         public $password = '?2qwUt(k';
         public $domain = 'yatkat';
         public $token;
+        
+        public function __construct(){
+            $this->get_hoteliga_token();
+        }
 
+        //Kimliği doğrulanmış isteklerde bulunabilmek için bir OAuth taşıyıcı jetonu alın.
         public function get_hoteliga_token() {
             $headers = array(
                 'Content-type: application/x-www-form-urlencoded'
@@ -47,9 +52,5 @@
             } finally {
                 curl_close($ch);
             }
-        }
-
-        public function __construct(){
-            $this->get_hoteliga_token();
         }
     }

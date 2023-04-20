@@ -1,5 +1,7 @@
 <?php
-    class customer extends hoteliga{
+    class reservations extends hoteliga{
+
+        //Gelecekteki tüm rezervasyonları alın.
         public function reservationsFuture(){
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, "https://api.hoteliga.com/v1/Reservations/Future");
@@ -21,6 +23,7 @@
 
         }
 
+        //Bir rezervasyon için saklanan verileri alın.
         public function reservationView(){
             $id = $_REQUEST["id"];
             
@@ -44,22 +47,22 @@
             
         }
 
-        
+        //Yeni bir rezervasyon oluşturun.
         public function addReservation(){
             $data = array(
                 'bookingAgencyId' => $_REQUEST["bookingAgencyId"],
-                'bookingAgencyReferenceCode' => $_REQUEST["bookingAgencyReferenceCode"],
+                'bookingAgencyReferenceCode' => isset($_REQUEST["bookingAgencyReferenceCode"]) ? $_REQUEST["bookingAgencyReferenceCode"] : null,
                 'customer' => $_REQUEST["customer"],
                 'currencyCode' => $_REQUEST["currencyCode"],
-                'PriceListId' => $_REQUEST["PriceListId"],
+                'PriceListId' => isset($_REQUEST["PriceListId"]) ? $_REQUEST["PriceListId"] : null                ,
                 'dateFrom' => $_REQUEST["dateFrom"],
                 'dateTo' => $_REQUEST["dateTo"],
-                'numAdults' => $_REQUEST["numAdults"],
+                'numAdults' => isset($_REQUEST["numAdults"]) ? $_REQUEST["numAdults"] : null,
                 'reservationStatus' => $_REQUEST["reservationStatus"],
-                'roomId' => $_REQUEST["roomId"],
+                'roomId' => isset($_REQUEST["roomId"]) ? $_REQUEST["roomId"] : null,
                 'roomTypeId' => $_REQUEST["roomTypeId"],
                 'totalAgreedPrice' => $_REQUEST["totalAgreedPrice"],
-                'board' => $_REQUEST["board"],
+                'board' => isset($_REQUEST["board"]) ? $_REQUEST["board"] : null,
             );
             
             $headers = array(
@@ -103,10 +106,11 @@
             return $result;
         }
 
-
+        //Bir dizi mevcut rezervasyon için depolanan verileri alın.
         public function reservations(){
+
             $data = array(
-                'id' => $_REQUEST["id"]
+                'ReservationIds' => $_REQUEST["ReservationIds"]
             );
             
             $headers = array(
@@ -150,9 +154,10 @@
             return $result;
         }
 
+        //Bir dizi rezervasyon için saklanan verileri alın, rezervasyonlardaki müşteri verileri tek bir nesne olarak döndürülür
         public function reservations2(){
             $data = array(
-                'id' => $_REQUEST["id"]
+                'id' => $_REQUEST["ReservationIds"]
             );
             
             $headers = array(
@@ -196,9 +201,10 @@
             return $result;
         }
 
+        //Rezervasyon arayın.
         public function reservationsFilter(){
             $data = array(
-                'id' => $_REQUEST["id"]
+                'customerNameContains' => $_REQUEST["customerNameContains"]
             );
             
             $headers = array(
@@ -242,6 +248,7 @@
             return $result;
         }
 
+        //Belirtilen tarihler arasındaki rezervasyonlarda check-in yaptırın
         public function reservationsCheckedIn(){
             $data = array(
                 'dateFrom' => $_REQUEST["dateFrom"],
@@ -290,8 +297,7 @@
             return $result;
         }
 
-
-        
+        //Mevcut misafiri rezervasyona ekle
         public function reservationGuest(){
             $data = array(
                 'reservationId' => $_REQUEST["reservationId"],
@@ -340,7 +346,7 @@
             return $result;
         }
 
-
+        //Mevcut bir rezervasyonun verilerini güncelleyin.
         public function updateReservation(){
             $data = array(
                 'id' => $_REQUEST["id"],
@@ -350,7 +356,7 @@
                 'dateFrom' => $_REQUEST["dateFrom"],
                 'dateTo' => $_REQUEST["dateTo"],
                 'reservationStatusId' => $_REQUEST["reservationStatusId"],
-                'roomId' => $_REQUEST["roomId"],
+                'roomId' => isset($_REQUEST["roomId"]) ? $_REQUEST["roomId"] : null,
                 'roomTypeId' => $_REQUEST["roomTypeId"],
                 'totalAgreedPrice' => $_REQUEST["totalAgreedPrice"]
             );
@@ -396,21 +402,20 @@
             return $response;
         }
 
+        //Mevcut rezervasyonun yalnızca seçilen verilerini güncelleyin.
         public function updateReservationId(){
             $data = array(
                 'id' => $_REQUEST["id"],
                 'bookingAgencyId' => $_REQUEST["bookingAgencyId"],
-                'customer' => $_REQUEST["customer"],
+                //'customer' => $_REQUEST["customer"],
                 'currencyCode' => $_REQUEST["currencyCode"],
                 'dateFrom' => $_REQUEST["dateFrom"],
                 'dateTo' => $_REQUEST["dateTo"],
                 'reservationStatusId' => $_REQUEST["reservationStatusId"],
-                'roomId' => $_REQUEST["roomId"],
+                //'roomId' => $_REQUEST["roomId"],
                 'roomTypeId' => $_REQUEST["roomTypeId"],
                 'totalAgreedPrice' => $_REQUEST["totalAgreedPrice"]
             );
-
-            
             
             $headers = array(
                 'Accept: application/json',
@@ -453,8 +458,7 @@
             return $response;
         }
 
-
-        
+        //Rezervasyon için ekstra ücret alın.        
         public function reservationExtraCharges(){
             $id = $_REQUEST["id"];
             
@@ -477,6 +481,7 @@
             return $data;
         }
 
+        //Bir rezervasyona ekstra bir ücret ekler.
         public function reservationExtraChargesAdd(){
             $id = $_REQUEST["id"];
             $data = array(
@@ -495,7 +500,7 @@
                 'Authorization: Bearer '.$this->token,
             );
         
-            $url = "https://api.hoteliga.com/v1/Reservation/".$id."/ExtraCharges";
+            $url = "https://api.hoteliga.com/v1/Reservation/".$id."/ExtraCharge";
             
             $ch = curl_init();
             curl_setopt_array($ch, array(
@@ -530,6 +535,7 @@
             return $result;
         }
 
+        //Bir rezervasyonun ekstra ücretini silin.
         public function deleteReservationExtraCharge(){
             $id = $_REQUEST["id"];
             $id2 = $_REQUEST["id2"];
@@ -574,9 +580,8 @@
             return $response;
         }
 
-        
+        //Grup iki veya daha fazla rezervasyon.
         public function reservationsGroup(){
-            $id = $_REQUEST["id"];
             $data = array(
                 'id' => $_REQUEST["id"],
             );
@@ -622,9 +627,8 @@
             return $result;
         }
 
-
+        //Belirtilen sayıda rezervasyonun grubunu çözün, gruptaki kalan rezervasyonları yerinde bırakın. Tüm rezervasyonların grubunun çözülmesi grubu siler.
         public function reservationsUngroup(){
-            $id = $_REQUEST["id"];
             $data = array(
                 'id' => $_REQUEST["id"],
             );
@@ -670,7 +674,8 @@
             return $result;
         }
 
-        public function reservatioPayments(){
+        //Bir rezervasyonun ve gruplanmış ödemelerinin ödemelerini alın.
+        public function reservationPayments(){
             $id = $_REQUEST["id"];
             
             $ch = curl_init();

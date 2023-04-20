@@ -1,11 +1,11 @@
 <?php
-    class bookingAgencies extends hoteliga{
+    class paymentMethod extends hoteliga{
         
-        //Mülkün tüm BookingAgents'larını alın.
-        public function bookingAgencies(){
+        //Mevcut tüm ödeme yöntemlerini alın
+        public function paymentMethods(){
 
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "https://api.hoteliga.com/v1/bookingAgencies");
+            curl_setopt($ch, CURLOPT_URL, "https://api.hoteliga.com/v1/PaymentMethods");
             curl_setopt($ch, CURLOPT_HTTPHEADER, array(
                 "Authorization: Bearer ".$this->token,
                 "Content-Type: application/json"

@@ -1,6 +1,7 @@
 <?php
     class extraCharge extends hoteliga{
         
+        //Mevcut ekstra ücretlerin listesini alın
         public function extraCharges(){
 
             $ch = curl_init();
@@ -22,6 +23,7 @@
             return $data;
         }
 
+        //Mevcut ekstra ücret kategorilerinin listesini alın
         public function extraChargeCategories(){
 
             $ch = curl_init();
@@ -46,6 +48,7 @@
 
         }
 
+        //Yeni bir ekstra ücret oluştur
         public function extraChargePos(){
 
             $data = array(
@@ -97,6 +100,7 @@
             return $result;
         }
 
+        //Ek ücreti güncelleyin
         public function extraChargeUpdatePos(){
             
             $data = array(

@@ -1,6 +1,7 @@
 <?php
     class roomType extends hoteliga{
         
+        //Mülkün tüm RoomTypes'larını içeren bir liste alın.
         public function roomType(){
 
             $ch = curl_init();

@@ -1,6 +1,7 @@
 <?php
     class room extends hoteliga{
 
+        //Mülkün tüm Odalarının bir listesini alın.
         public function rooms(){
 
             $ch = curl_init();
@@ -23,6 +24,7 @@
 
         }
 
+        //Mülkün tüm Odalarını içeren genişletilmiş bir liste alın.
         public function roomsExtended(){
 
             $ch = curl_init();
