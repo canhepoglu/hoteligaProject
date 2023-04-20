@@ -29,7 +29,7 @@
             $id = $_REQUEST["id"];
             
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "https://api.hoteliga.com/v1/Guest/"+$id);
+            curl_setopt($ch, CURLOPT_URL, "https://api.hoteliga.com/v1/Guest/".$id);
             curl_setopt($ch, CURLOPT_HTTPHEADER, array(
                 "Authorization: Bearer ".$this->token,
                 "Content-Type: application/json"
@@ -73,9 +73,21 @@
 
         //yeni bir Konuk ekle
         public function addGuest(){
+
             $data = array(
+                'dateOfBirth' => $_REQUEST["dateOfBirth"] ?? null,
                 'FirstName' => $_REQUEST["FirstName"],
-                'LastName' => $_REQUEST["LastName"]
+                'LastName' => $_REQUEST["LastName"],
+                'LastName2' => $_REQUEST["LastName2"] ?? null,
+                'IdDocType' => $_REQUEST["IdDocType"] ?? null,
+                'IdDocNumber' => $_REQUEST["IdDocNumber"] ?? null,
+                'IdDocIssueDate' => $_REQUEST["IdDocIssueDate"] ?? null,
+                'IdDocExpirationDate' => $_REQUEST["IdDocExpirationDate"] ?? null,
+                'IdDocIssueCountryId' => $_REQUEST["IdDocIssueCountryId"] ?? null,
+                'NationalityCountryId' => $_REQUEST["NationalityCountryId"] ?? null,
+                'ProvinceId' => $_REQUEST["ProvinceId"] ?? null,
+                'IsPrimaryGuest' => $_REQUEST["IsPrimaryGuest"] ?? null,
+                'SalutationId' => $_REQUEST["SalutationId"] ?? null,
             );
             
             $headers = array(
@@ -127,7 +139,17 @@
             $data = array(
                 'id' => $_REQUEST["id"],
                 'FirstName' => $_REQUEST["FirstName"],
-                'LastName' => $_REQUEST["LastName"]
+                'LastName' => $_REQUEST["LastName"],
+                'LastName2' => $_REQUEST["LastName2"] ?? null,
+                'IdDocType' => $_REQUEST["IdDocType"] ?? null,
+                'IdDocNumber' => $_REQUEST["IdDocNumber"] ?? null,
+                'IdDocIssueDate' => $_REQUEST["IdDocIssueDate"] ?? null,
+                'IdDocExpirationDate' => $_REQUEST["IdDocExpirationDate"] ?? null,
+                'IdDocIssueCountryId' => $_REQUEST["IdDocIssueCountryId"] ?? null,
+                'NationalityCountryId' => $_REQUEST["NationalityCountryId"] ?? null,
+                'ProvinceId' => $_REQUEST["ProvinceId"] ?? null,
+                'IsPrimaryGuest' => $_REQUEST["IsPrimaryGuest"] ?? null,
+                'SalutationId' => $_REQUEST["SalutationId"] ?? null,
             );
             
             $headers = array(

@@ -27,10 +27,10 @@
 
         //Ülke koduna göre sistemdeki tüm iller hakkında veri döndürür
         public function provinces(){
-            $countryCode = $_REQUEST["countryCode"];
+            $countryCode = $_REQUEST["languageCode"];
             
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "https://api.hoteliga.com/v1/Reference/Provinces/".$countryCode."");
+            curl_setopt($ch, CURLOPT_URL, "https://api.hoteliga.com/v1/Reference/Provinces/".$countryCode);
             curl_setopt($ch, CURLOPT_HTTPHEADER, array(
                 "Authorization: Bearer ".$this->token,
                 "Content-Type: application/json"

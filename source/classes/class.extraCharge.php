@@ -102,11 +102,11 @@
 
         //Ek ücreti güncelleyin
         public function extraChargeUpdatePos(){
-            
+
             $data = array(
-                'items' => $_REQUEST["Items"],
-                'timeStamp' => $_REQUEST["TimeStamp"],
-                'roomTitle' => $_REQUEST["RoomTitle"],
+                'items' => $_REQUEST["items"],
+                'timeStamp' => $_REQUEST["timeStamp"],
+                'roomTitle' => $_REQUEST["roomTitle"],
                 'lastName' => $_REQUEST["lastName"]
             );
             
