@@ -1,13 +1,13 @@
 <?php 
     if(empty($_GET["path"]) || empty($_GET["method"])) exit("API");
-    require('./config.php');
+    include_once('./hoteliga.php');
 
     $path = $_GET["path"];
     $method = $_GET["method"];
     $filePath = "./source/classes/class.$path.php";
     if(file_exists($filePath)){
 
-        require($filePath);
+        include_once($filePath);
 
         $class = new $path;
         $json_data = $class->$method();
