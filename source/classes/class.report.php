@@ -3,9 +3,9 @@
         
         //Belirli bir rapora aktarın.
         public function report(){
-
+            
             $data = array(
-                'id' => $_REQUEST["id"],
+                'id' => $_REQUEST["id"] ?? null,
                 'parameters' => $_REQUEST["parameters"],
                 'output' => $_REQUEST["output"]
             );

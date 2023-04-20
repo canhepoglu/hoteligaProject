@@ -51,18 +51,18 @@
         public function addReservation(){
             $data = array(
                 'bookingAgencyId' => $_REQUEST["bookingAgencyId"],
-                'bookingAgencyReferenceCode' => isset($_REQUEST["bookingAgencyReferenceCode"]) ? $_REQUEST["bookingAgencyReferenceCode"] : null,
+                'bookingAgencyReferenceCode' => $_REQUEST["bookingAgencyReferenceCode"] ?? null,
                 'customer' => $_REQUEST["customer"],
                 'currencyCode' => $_REQUEST["currencyCode"],
-                'PriceListId' => isset($_REQUEST["PriceListId"]) ? $_REQUEST["PriceListId"] : null                ,
+                'PriceListId' => $_REQUEST["PriceListId"] ?? null                ,
                 'dateFrom' => $_REQUEST["dateFrom"],
                 'dateTo' => $_REQUEST["dateTo"],
-                'numAdults' => isset($_REQUEST["numAdults"]) ? $_REQUEST["numAdults"] : null,
+                'numAdults' => $_REQUEST["numAdults"] ?? null,
                 'reservationStatus' => $_REQUEST["reservationStatus"],
-                'roomId' => isset($_REQUEST["roomId"]) ? $_REQUEST["roomId"] : null,
+                'roomId' => $_REQUEST["roomId"] ?? null,
                 'roomTypeId' => $_REQUEST["roomTypeId"],
                 'totalAgreedPrice' => $_REQUEST["totalAgreedPrice"],
-                'board' => isset($_REQUEST["board"]) ? $_REQUEST["board"] : null,
+                'board' => $_REQUEST["board"] ?? null,
             );
             
             $headers = array(
