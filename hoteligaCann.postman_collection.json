@@ -1,0 +1,3953 @@
+{
+	"info": {
+		"_postman_id": "4a5d8890-5b6c-4dd1-b16a-c0581f588f18",
+		"name": "hoteligaCann",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21746768"
+	},
+	"item": [
+		{
+			"name": "Room",
+			"item": [
+				{
+					"name": "roomsExtended",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=room&method=roomsExtended",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "room"
+								},
+								{
+									"key": "method",
+									"value": "roomsExtended"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rooms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=room&method=rooms",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "room"
+								},
+								{
+									"key": "method",
+									"value": "rooms"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": {}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "BookingAgencies",
+			"item": [
+				{
+					"name": "BookingAgencies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=bookingAgencies&method=bookingAgencies",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "bookingAgencies"
+								},
+								{
+									"key": "method",
+									"value": "bookingAgencies"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reference",
+			"item": [
+				{
+					"name": "Countries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reference&method=countries&languageCode=en",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reference"
+								},
+								{
+									"key": "method",
+									"value": "countries"
+								},
+								{
+									"key": "languageCode",
+									"value": "en"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Provinces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reference&method=provinces&languageCode=tr",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reference"
+								},
+								{
+									"key": "method",
+									"value": "provinces"
+								},
+								{
+									"key": "languageCode",
+									"value": "tr"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": {}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "ExtraCharge",
+			"item": [
+				{
+					"name": "ExtraCharges",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=extraCharge&method=extraCharges",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "extraCharge"
+								},
+								{
+									"key": "method",
+									"value": "extraCharges"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ExtraChargesCategories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=extraCharge&method=extraChargeCategories",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "extraCharge"
+								},
+								{
+									"key": "method",
+									"value": "extraChargeCategories"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ExtraChargePos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "items",
+									"value": "can",
+									"type": "text"
+								},
+								{
+									"key": "sum",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "timeStamp",
+									"value": "2019-06-26T17:53:20.179807+03:00",
+									"type": "text"
+								},
+								{
+									"key": "roomTitle",
+									"value": "01",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Cinder",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=extraCharge&method=extraChargePos",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "extraCharge"
+								},
+								{
+									"key": "method",
+									"value": "extraChargePos"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ExtraChargeUpdatePos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\": [\r\n        {\r\n            \"Name\": \"Wine\",\r\n            \"Price\": 7,\r\n            \"Quantity\": 1\r\n        },\r\n        {\r\n            \"Name\": \"Cake\",\r\n            \"Price\": 8,\r\n            \"Quantity\": 1\r\n        }\r\n    ],\r\n    \"timeStamp\": \"2019-06-26T17:53:20.179807+03:00\",\r\n    \"roomTitle\": \"01\",\r\n    \"lastName\": \"Cinder\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=extraCharge&method=extraChargeUpdatePos",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "extraCharge"
+								},
+								{
+									"key": "method",
+									"value": "extraChargeUpdatePos"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": {}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "RoomType",
+			"item": [
+				{
+					"name": "RoomTypes",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": {}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Usage",
+			"item": [
+				{
+					"name": "Usage",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": {}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Payments",
+			"item": [
+				{
+					"name": "CreatePayment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"paymentDate\": \"2019-07-15\",\r\n    \"reservationId\": 10,\r\n    \"paymentMethodId\": 3,\r\n    \"amount\": 16.30,\r\n    \"notes\": \"Notes for payment\",\r\n    \"amountCurrency\": 16.30,\r\n    \"currencyCode\": \"EUR\",\r\n    \"exchangeRate\": 1.0,\r\n    \"invoiceId\": 30\r\n}\r\n    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=payment&method=createPayment",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "payment"
+								},
+								{
+									"key": "method",
+									"value": "createPayment"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePayment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "paymentDate",
+									"value": "2019-07-16",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "notes",
+									"value": "Notes for payment 2",
+									"type": "text"
+								},
+								{
+									"key": "exchangeRate",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "invoiceId",
+									"value": "31",
+									"type": "text"
+								},
+								{
+									"key": "paymentMethodId",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "amountCurrency",
+									"value": "14",
+									"type": "text"
+								},
+								{
+									"key": "currencyCode",
+									"value": "USD",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=payment&method=updatePayment",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "payment"
+								},
+								{
+									"key": "method",
+									"value": "updatePayment"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePayment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "rPCvZ1qFkvwX5ZDQlByVrULc-bu3ZVNTD5cHYmglbeJjlFwNR_628qISd52ro85fCymniDQvNTl_KZf2leUPS19dlrCOPhPqTtyuRy7WKaETpbAyIbnOjrB90-sncJHbvJJj314FiN2govP-BasXX6YXaYPeT4zXz5aQhpfiqVDVjGNO5vuhT3S2l2wtxVafJoiQOiQ2-mWqL6JPZKHlsLjCPJwUKvtdqYTOmZ5PDGkwSjjkn8ImvB_FL3E2CzzAEw9tzO7sdejlexCIi_ZByG0PM_MzDEPTuSPme2mYqWY"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "15",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=payment&method=deletePayment",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "payment"
+								},
+								{
+									"key": "method",
+									"value": "deletePayment"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": {}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Guest",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=guest&method=guestList",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "guest"
+								},
+								{
+									"key": "method",
+									"value": "guestList"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=guest&method=guestView&id=1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "guest"
+								},
+								{
+									"key": "method",
+									"value": "guestView"
+								},
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "FirstName",
+									"value": "can",
+									"type": "default"
+								},
+								{
+									"key": "LastName",
+									"value": "test",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=guest&method=addGuest",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "guest"
+								},
+								{
+									"key": "method",
+									"value": "addGuest"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "FirstName",
+									"value": "evrim",
+									"type": "default"
+								},
+								{
+									"key": "LastName",
+									"value": "deneme",
+									"type": "default"
+								},
+								{
+									"key": "id",
+									"value": "18",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=guest&method=updateGuest",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "guest"
+								},
+								{
+									"key": "method",
+									"value": "updateGuest"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "12",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=guest&method=deleteGuest",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "guest"
+								},
+								{
+									"key": "method",
+									"value": "deleteGuest"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=customer&method=customerList",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "customer"
+								},
+								{
+									"key": "method",
+									"value": "customerList"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=customer&method=customerView&id=1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "customer"
+								},
+								{
+									"key": "method",
+									"value": "customerView"
+								},
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "CustomerId",
+									"value": " 123",
+									"type": "text"
+								},
+								{
+									"key": "NameContains",
+									"value": " Jordan",
+									"type": "text"
+								},
+								{
+									"key": "PhoneContains",
+									"value": " '+90'",
+									"type": "text"
+								},
+								{
+									"key": "CountryIs[Id]",
+									"value": " ES",
+									"type": "text"
+								},
+								{
+									"key": "TaxIdContains",
+									"value": " '1111'",
+									"type": "text"
+								},
+								{
+									"key": "MobileContains",
+									"value": " '+80'",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=customer&method=customers",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "customer"
+								},
+								{
+									"key": "method",
+									"value": "customers"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"protocolProfileBehavior": {
+						"followOriginalHttpMethod": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "billingAddress1",
+									"value": " Main Str. 22",
+									"type": "text"
+								},
+								{
+									"key": "billingAddress2",
+									"value": " Secondary Str. 35",
+									"type": "text"
+								},
+								{
+									"key": "billingCity",
+									"value": " Madrit",
+									"type": "text"
+								},
+								{
+									"key": "billingZipCode",
+									"value": " '28001'",
+									"type": "text"
+								},
+								{
+									"key": "countryCode",
+									"value": " ES",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": " jmith@example.com",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": " John",
+									"type": "text"
+								},
+								{
+									"key": "isSalesTaxExempt",
+									"value": " 0",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": " Smith",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": " '612345678'",
+									"type": "text"
+								},
+								{
+									"key": "notes",
+									"value": " Notes about customer",
+									"type": "text"
+								},
+								{
+									"key": "occupation",
+									"value": " Developer",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": " '915111100'",
+									"type": "text"
+								},
+								{
+									"key": "provinceId",
+									"value": " 2",
+									"type": "text"
+								},
+								{
+									"key": "taxId",
+									"value": " '1111111111'",
+									"type": "text"
+								},
+								{
+									"key": "taxIdAdditional",
+									"value": " '2222222222'",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=customer&method=addCustomer",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "customer"
+								},
+								{
+									"key": "method",
+									"value": "addCustomer"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "billingAddress1",
+									"value": " Main Str. 22",
+									"type": "text"
+								},
+								{
+									"key": "billingAddress2",
+									"value": " Secondary Str. 35",
+									"type": "text"
+								},
+								{
+									"key": "billingCity",
+									"value": " Madrit",
+									"type": "text"
+								},
+								{
+									"key": "billingZipCode",
+									"value": " '28001'",
+									"type": "text"
+								},
+								{
+									"key": "countryCode",
+									"value": " ES",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": " jmith@example.com",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": " John",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": " 1",
+									"type": "text"
+								},
+								{
+									"key": "isSalesTaxExempt",
+									"value": " 0",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": " Smith",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": " '612345678'",
+									"type": "text"
+								},
+								{
+									"key": "notes",
+									"value": " Notes about customer",
+									"type": "text"
+								},
+								{
+									"key": "occupation",
+									"value": " Developer",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": " '915111100'",
+									"type": "text"
+								},
+								{
+									"key": "provinceId",
+									"value": " 2",
+									"type": "text"
+								},
+								{
+									"key": "taxId",
+									"value": " '1111111111'",
+									"type": "text"
+								},
+								{
+									"key": "taxIdAdditional",
+									"value": " '2222222222'",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=customer&method=updateCustomer",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "customer"
+								},
+								{
+									"key": "method",
+									"value": "updateCustomer"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "12",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/index.php?path=customer&method=deleteCustomer",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "customer"
+								},
+								{
+									"key": "method",
+									"value": "deleteCustomer"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservations",
+			"item": [
+				{
+					"name": "reservationsFuture",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservations&method=reservationsFuture",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservations"
+								},
+								{
+									"key": "method",
+									"value": "reservationsFuture"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reservationView",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservations&method=reservationView&id=5",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservations"
+								},
+								{
+									"key": "method",
+									"value": "reservationView"
+								},
+								{
+									"key": "id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addReservation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservations&method=addReservation",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservations"
+								},
+								{
+									"key": "method",
+									"value": "addReservation"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reservations",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ReservationIds",
+									"value": "1, 15",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservations&method=reservations",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservations"
+								},
+								{
+									"key": "method",
+									"value": "reservations"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reservations2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ReservationIds",
+									"value": "[1,15] ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservations&method=reservations2",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservations"
+								},
+								{
+									"key": "method",
+									"value": "reservations2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reservationsFilter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservations&method=reservationsFilter",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservations"
+								},
+								{
+									"key": "method",
+									"value": "reservationsFilter"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reservationsCheckedIn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "dateFrom",
+									"value": "2021-02-09",
+									"type": "text"
+								},
+								{
+									"key": "dateTo",
+									"value": "2024-02-15",
+									"type": "text"
+								},
+								{
+									"key": "roomTitle",
+									"value": "201 Delux",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservations&method=reservationsCheckedIn",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservations"
+								},
+								{
+									"key": "method",
+									"value": "reservationsCheckedIn"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reservationGuest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "isPrimaryGuest",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "reservationId",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservations&method=reservationGuest",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservations"
+								},
+								{
+									"key": "method",
+									"value": "reservationGuest"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateReservation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "13",
+									"type": "text"
+								},
+								{
+									"key": "roomTypeId",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "customer",
+									"value": "[object Object]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "totalAgreedPrice",
+									"value": "80",
+									"type": "text"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2016-11-20",
+									"type": "text"
+								},
+								{
+									"key": "dateTo",
+									"value": "2016-11-25",
+									"type": "text"
+								},
+								{
+									"key": "bookingAgencyId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "contractId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "reservationStatusId",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "currencyCode",
+									"value": "EUR",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "Adding notes for the reservation",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservations&method=updateReservationId",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservations"
+								},
+								{
+									"key": "method",
+									"value": "updateReservationId"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateReservationId",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "roomTypeId",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "customer",
+									"value": "[object Object]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "totalAgreedPrice",
+									"value": "80",
+									"type": "text"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2016-11-20",
+									"type": "text"
+								},
+								{
+									"key": "dateTo",
+									"value": "2016-11-25",
+									"type": "text"
+								},
+								{
+									"key": "bookingAgencyId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "contractId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "reservationStatusId",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "currencyCode",
+									"value": "EUR",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "Adding notes for the reservation",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservations&method=updateReservationId",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservations"
+								},
+								{
+									"key": "method",
+									"value": "updateReservationId"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reservationExtraCharges",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservations&method=reservationExtraCharges&id=5",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservations"
+								},
+								{
+									"key": "method",
+									"value": "reservationExtraCharges"
+								},
+								{
+									"key": "id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reservationExtraChargesAdd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "extraChargeId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "chargeDate",
+									"value": "2018-03-06",
+									"type": "text"
+								},
+								{
+									"key": "unitPrice",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "notes",
+									"value": "Test",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "totalExtraTaxes",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservations&method=reservationExtraChargesAdd",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservations"
+								},
+								{
+									"key": "method",
+									"value": "reservationExtraChargesAdd"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteReservationExtraCharge",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "extraChargeId",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "chargeDate",
+									"value": "2018-03-06",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "unitPrice",
+									"value": "5",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "quantity",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "notes",
+									"value": "Test",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id2",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservations&method=deleteReservationExtraCharge",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservations"
+								},
+								{
+									"key": "method",
+									"value": "deleteReservationExtraCharge"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reservationsGroup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "[1, 15]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservations&method=reservationsGroup",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservations"
+								},
+								{
+									"key": "method",
+									"value": "reservationsGroup"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reservationsUngroup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1, 15",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservations&method=reservationsUngroup",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservations"
+								},
+								{
+									"key": "method",
+									"value": "reservationsUngroup"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reservationPayments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservations&method=reservationPayments&id=5",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservations"
+								},
+								{
+									"key": "method",
+									"value": "reservationPayments"
+								},
+								{
+									"key": "id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reporting",
+			"item": [
+				{
+					"name": "Report",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "124",
+									"type": "text"
+								},
+								{
+									"key": "parameters",
+									"value": "\"dateFrom\": \"7/01/2021\", \"dateTo\": \"7/15/2021\", \"roomId\": 1",
+									"type": "text"
+								},
+								{
+									"key": "output",
+									"value": "json",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=report&method=report",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "report"
+								},
+								{
+									"key": "method",
+									"value": "report"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PaymentMethod",
+			"item": [
+				{
+					"name": "PaymentMethods",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=paymentMethod&method=paymentMethods",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "paymentMethod"
+								},
+								{
+									"key": "method",
+									"value": "paymentMethods"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ReservationContract",
+			"item": [
+				{
+					"name": "reservationContractID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservationContract&method=reservationContractID&reservationId=2",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservationContract"
+								},
+								{
+									"key": "method",
+									"value": "reservationContractID"
+								},
+								{
+									"key": "reservationId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createReservationContract",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ContractStart",
+									"value": "2020-02-01",
+									"type": "text"
+								},
+								{
+									"key": "ContractEnd",
+									"value": "2023-05-31",
+									"type": "text"
+								},
+								{
+									"key": "ReservationId",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservationContract&method=createReservationContract",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservationContract"
+								},
+								{
+									"key": "method",
+									"value": "createReservationContract"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateReservationContract",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ContractStart",
+									"value": "2020-02-01",
+									"type": "text"
+								},
+								{
+									"key": "ContractEnd",
+									"value": "2023-05-31",
+									"type": "text"
+								},
+								{
+									"key": "ReservationId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservationContract&method=updateReservationContract",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservationContract"
+								},
+								{
+									"key": "method",
+									"value": "updateReservationContract"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteReservationContract",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ContractStart",
+									"value": "2020-02-01",
+									"type": "text"
+								},
+								{
+									"key": "ContractEnd",
+									"value": "2023-05-31",
+									"type": "text"
+								},
+								{
+									"key": "ReservationId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=reservationContract&method=deleteReservationContract",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "reservationContract"
+								},
+								{
+									"key": "method",
+									"value": "deleteReservationContract"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invoice",
+			"item": [
+				{
+					"name": "invoicePreview",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "reservationId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2017-12-11",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "dateTo",
+									"value": "2017-12-11",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=invoice&method=invoicePreview",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "invoice"
+								},
+								{
+									"key": "method",
+									"value": "invoicePreview"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invoicesFilter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "reservationId",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "dateFrom",
+									"value": "2017-12-11",
+									"type": "text"
+								},
+								{
+									"key": "dateTo",
+									"value": "2017-12-11",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=invoice&method=invoicesFilter",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "invoice"
+								},
+								{
+									"key": "method",
+									"value": "invoicesFilter"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PlannedPayment",
+			"item": [
+				{
+					"name": "PlannedPayments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=plannedPayment&method=plannedPaymentsReservationId&reservationId=5",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "plannedPayment"
+								},
+								{
+									"key": "method",
+									"value": "plannedPaymentsReservationId"
+								},
+								{
+									"key": "reservationId",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddPlannedPayment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "amount",
+									"value": "130",
+									"type": "text"
+								},
+								{
+									"key": "currencyCode",
+									"value": "EUR",
+									"type": "text"
+								},
+								{
+									"key": "paymentDescriptionId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "plannedDate",
+									"value": "2020-05-31",
+									"type": "text"
+								},
+								{
+									"key": "reservationId",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=plannedPayment&method=addPlannedPayment",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "plannedPayment"
+								},
+								{
+									"key": "method",
+									"value": "addPlannedPayment"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePlannedPayment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "130",
+									"type": "text"
+								},
+								{
+									"key": "currencyCode",
+									"value": "EUR",
+									"type": "text"
+								},
+								{
+									"key": "paymentDescriptionId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "plannedDate",
+									"value": "2020-05-31",
+									"type": "text"
+								},
+								{
+									"key": "reservationId",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=plannedPayment&method=updatePlannedPayment",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "plannedPayment"
+								},
+								{
+									"key": "method",
+									"value": "updatePlannedPayment"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePlannedPayment",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "130",
+									"type": "text"
+								},
+								{
+									"key": "currencyCode",
+									"value": "EUR",
+									"type": "text"
+								},
+								{
+									"key": "paymentDescriptionId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "plannedDate",
+									"value": "2020-05-31",
+									"type": "text"
+								},
+								{
+									"key": "reservationId",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=plannedPayment&method=deletePlannedPayment&id=1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "plannedPayment"
+								},
+								{
+									"key": "method",
+									"value": "deletePlannedPayment"
+								},
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Availability",
+			"item": [
+				{
+					"name": "AvailabilityRoom",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "dateFrom",
+									"value": "2018-03-10",
+									"type": "text"
+								},
+								{
+									"key": "dateTo",
+									"value": "2018-03-20",
+									"type": "text"
+								},
+								{
+									"key": "groupDates",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=availability&method=availabilityRoom",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "availability"
+								},
+								{
+									"key": "method",
+									"value": "availabilityRoom"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetRoomTypeAvailability",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "dateFrom",
+									"value": "2017-03-10",
+									"type": "text"
+								},
+								{
+									"key": "dateTo",
+									"value": "2017-03-21",
+									"type": "text"
+								},
+								{
+									"key": "bookingAgencyId",
+									"value": "27",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=availability&method=getRoomTypeAvailability",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "availability"
+								},
+								{
+									"key": "method",
+									"value": "getRoomTypeAvailability"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRoomTypeAvailabilityCombinedExtended",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "dateFrom",
+									"value": "2018-04-30",
+									"type": "text"
+								},
+								{
+									"key": "dateTo",
+									"value": "2018-05-04",
+									"type": "text"
+								},
+								{
+									"key": "bookingAgencyId",
+									"value": "27",
+									"type": "text"
+								},
+								{
+									"key": "currencyCode",
+									"value": "USD",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=availability&method=getRoomTypeAvailabilityCombinedExtended",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "availability"
+								},
+								{
+									"key": "method",
+									"value": "getRoomTypeAvailabilityCombinedExtended"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PaymentDescription",
+			"item": [
+				{
+					"name": "PaymentDescription",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=paymentDescription&method=getPaymentDescriptions",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "paymentDescription"
+								},
+								{
+									"key": "method",
+									"value": "getPaymentDescriptions"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddPaymentDescription",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "description",
+									"value": "march2020",
+									"type": "text"
+								},
+								{
+									"key": "isEnabled",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=paymentDescription&method=addPaymentDescription",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "paymentDescription"
+								},
+								{
+									"key": "method",
+									"value": "addPaymentDescription"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePaymentDescription",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "description",
+									"value": "march2020",
+									"type": "text"
+								},
+								{
+									"key": "isEnabled",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=paymentDescription&method=updatePaymentDescription",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "paymentDescription"
+								},
+								{
+									"key": "method",
+									"value": "updatePaymentDescription"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePaymentDescription",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "description",
+									"value": "march2020",
+									"type": "text"
+								},
+								{
+									"key": "isEnabled",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/hoteliga/index.php?path=paymentDescription&method=deletePaymentDescription&id=2",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"hoteliga",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "path",
+									"value": "paymentDescription"
+								},
+								{
+									"key": "method",
+									"value": "deletePaymentDescription"
+								},
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ChannelManager",
+			"item": [
+				{
+					"name": "Airbnb",
+					"item": [
+						{
+							"name": "Getairbnbaccounts",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=paymentDescription&method=getPaymentDescriptions",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "paymentDescription"
+										},
+										{
+											"key": "method",
+											"value": "getPaymentDescriptions"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Getairbnbaccount",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=get_airbnb_account&id=1",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "get_airbnb_account"
+										},
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deleteairbnbaccount",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=delete_airbnb_account&id=1",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "delete_airbnb_account"
+										},
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Getairbnblistings",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=get_airbnb_listings",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "get_airbnb_listings"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Getairbnbaccountlistings",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=get_airbnb_account_listings&id=5",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "get_airbnb_account_listings"
+										},
+										{
+											"key": "id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get_airbnb_listing_info",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=get_airbnb_listing_info&account_id=5&listing_id=5",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "get_airbnb_listing_info"
+										},
+										{
+											"key": "account_id",
+											"value": "5"
+										},
+										{
+											"key": "listing_id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update_airbnb_listing",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "account_id",
+											"value": "29924",
+											"type": "text"
+										},
+										{
+											"key": "listing_id",
+											"value": "3928",
+											"type": "text"
+										},
+										{
+											"key": "action",
+											"value": "disconnect",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=update_airbnb_listing",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "update_airbnb_listing"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAirbnbAvailabilityRules",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=getAirbnbAvailabilityRules&account_id=5&listing_id=5",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "getAirbnbAvailabilityRules"
+										},
+										{
+											"key": "account_id",
+											"value": "5"
+										},
+										{
+											"key": "listing_id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateAvailabilityRules",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "account_id",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "listing_id",
+											"value": "456789",
+											"type": "text"
+										},
+										{
+											"key": "defaultMaxNights",
+											"value": "8",
+											"type": "text"
+										},
+										{
+											"key": "minNightsForCheckIn",
+											"value": "[{\"dayOfWeek\": 1,\"minNights\": 1}]",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=updateAvailabilityRules",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "updateAvailabilityRules"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAirbnbInventory",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "account_id",
+											"value": "2976",
+											"type": "text"
+										},
+										{
+											"key": "listing_id",
+											"value": "405",
+											"type": "text"
+										},
+										{
+											"key": "date_from",
+											"value": "2020-10-20",
+											"type": "text"
+										},
+										{
+											"key": "date_to",
+											"value": "2020-10-21",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=getAirbnbInventory",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "getAirbnbInventory"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateInventory",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"account_id\":\"29976\",\r\n    \"listing_id\":\"405\",\r\n    \"operations\": [\r\n        {\r\n            \"dateFrom\": \"2020-10-20\",\r\n            \"dateTo\": \"2020-10-21\",\r\n            \"available\": \"available\",\r\n            \"count\": 4,\r\n            \"setAvailable\": true\r\n        },\r\n        {\r\n            \"dateFrom\": \"2020-10-22\",\r\n            \"dateTo\": \"2020-10-23\",\r\n            \"available\": \"unavailable\",\r\n            \"dailyPrice\": 40,\r\n            \"setPrice\":true,\r\n            \"setRestrictions\": true,\r\n            \"maxNights\": 15,\r\n            \"closedToDeparture\": true\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=updateInventory",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "updateInventory"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAirbnbPricingSettings",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=getAirbnbPricingSettings&account_id=5&listing_id=5",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "getAirbnbPricingSettings"
+										},
+										{
+											"key": "account_id",
+											"value": "5"
+										},
+										{
+											"key": "listing_id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updatePricingSettings",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accountId\": \"299413876\",\r\n    \"listingId\": \"40269846\",\r\n    \"pricingSetting\": {\r\n        \"defaultDailyPrice\": 12,\r\n        \"guestsIncluded\": 2,\r\n        \"pricePerExtraPerson\": 0,\r\n        \"standardFees\": [\r\n            {\r\n                \"feeType\": \"PASS_THROUGH_MANAGEMENT_FEE\",\r\n                \"amountType\": \"percent\",\r\n                \"amountFlat\": 0,\r\n                \"amountPercent\": 15.5,\r\n                \"offline\": false,\r\n                \"feeUnitType\": null\r\n            },\r\n            {\r\n                \"feeType\": \"PASS_THROUGH_RESORT_FEE\",\r\n                \"amountType\": \"flat\",\r\n                \"amountFlat\": 12,\r\n                \"amountPercent\": 0,\r\n                \"offline\": false,\r\n                \"feeUnitType\": null\r\n            }\r\n        ],\r\n        \"passThroughTaxes\": [],\r\n        \"defaultPricingRules\": [\r\n            {\r\n                \"ruleType\": \"BOOKED_BEYOND_AT_LEAST_X_DAYS\",\r\n                \"priceChange\": -3,\r\n                \"priceChangeType\": \"PERCENT\"\r\n            }\r\n        ]\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=updatePricingSettings",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "updatePricingSettings"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAirbnbRuleSets",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=getAirbnbRuleSets&account_id=5",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "getAirbnbRuleSets"
+										},
+										{
+											"key": "account_id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createRuleSet",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"accountId\": \"123456\",\r\n   \"ruleSet\": {\r\n      \"title\": \"Created rule through API\",\r\n      \"color\": 2,\r\n      \"ruleSetPricingRules\": [\r\n         {\r\n            \"ruleType\": \"SEASONAL_ADJUSTMENT\",\r\n            \"priceChange\": 15,\r\n            \"priceChangeType\": \"PERCENT\"\r\n         }\r\n      ],\r\n      \"ruleSetAvailabilityRule\": {\r\n         \"closedForCheckIn\": [\r\n            \"MONDAY\",\r\n            \"SUNDAY\",\r\n            \"TUESDAY\"\r\n         ],\r\n         \"maxNights\": \r\n         {\r\n             \"monday\": 6,\r\n             \"unspecified\": 7\r\n         }\r\n      }\r\n   }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=createRuleSet",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "createRuleSet"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateRuleSet",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"accountId\": \"123456\",\r\n   \"ruleSet\": {\r\n      \"id\": \"456789\",\r\n      \"title\": \"Created rule through API\",\r\n      \"color\": 2,\r\n      \"ruleSetPricingRules\": [\r\n         {\r\n            \"ruleType\": \"SEASONAL_ADJUSTMENT\",\r\n            \"priceChange\": 15,\r\n            \"priceChangeType\": \"PERCENT\"\r\n         }\r\n      ],\r\n      \"ruleSetAvailabilityRule\": {\r\n         \"closedForCheckIn\": [\r\n            \"MONDAY\",\r\n            \"SUNDAY\",\r\n            \"TUESDAY\"\r\n         ],\r\n         \"maxNights\": \r\n         {\r\n             \"monday\": 6,\r\n             \"unspecified\": 7\r\n         }\r\n      }\r\n   }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=updateRuleSet",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "updateRuleSet"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteRuleSet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=deleteRuleSet&account_id=1&rule_set_id=5",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "deleteRuleSet"
+										},
+										{
+											"key": "account_id",
+											"value": "1"
+										},
+										{
+											"key": "rule_set_id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAppliedRuleSets",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=getAppliedRuleSets&account_id=1&listing_id=5",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "getAppliedRuleSets"
+										},
+										{
+											"key": "account_id",
+											"value": "1"
+										},
+										{
+											"key": "listing_id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "applyRuleSetToListing",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"accountId\": \"123456\",\r\n   \"listingId\": \"40269846\",\r\n   \"timelineItem\": {\r\n      \"startDate\": \"2021-06-05\",\r\n      \"endDate\": \"2021-06-15\",\r\n      \"ruleSetId\": \"169710991\"\r\n   }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=applyRuleSetToListing",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "applyRuleSetToListing"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAirbnbReservation",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"accountId\": \"123456\",\r\n   \"listingId\": \"40269846\",\r\n   \"timelineItem\": {\r\n      \"startDate\": \"2021-06-05\",\r\n      \"endDate\": \"2021-06-15\",\r\n      \"ruleSetId\": \"169710991\"\r\n   }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=getAirbnbReservation",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "getAirbnbReservation"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "removeAppliedRules",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "rPCvZ1qFkvwX5ZDQlByVrULc-bu3ZVNTD5cHYmglbeJjlFwNR_628qISd52ro85fCymniDQvNTl_KZf2leUPS19dlrCOPhPqTtyuRy7WKaETpbAyIbnOjrB90-sncJHbvJJj314FiN2govP-BasXX6YXaYPeT4zXz5aQhpfiqVDVjGNO5vuhT3S2l2wtxVafJoiQOiQ2-mWqL6JPZKHlsLjCPJwUKvtdqYTOmZ5PDGkwSjjkn8ImvB_FL3E2CzzAEw9tzO7sdejlexCIi_ZByG0PM_MzDEPTuSPme2mYqWY"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "account_id",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "listing_id",
+											"value": "40269846",
+											"type": "text"
+										},
+										{
+											"key": "start_date",
+											"value": "2021-06-05",
+											"type": "text"
+										},
+										{
+											"key": "end_date",
+											"value": "2021-06-15",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=removeAppliedRules",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "removeAppliedRules"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getFutureReservations",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"accountId\": \"123456\",\r\n   \"listingId\": \"40269846\",\r\n   \"timelineItem\": {\r\n      \"startDate\": \"2021-06-05\",\r\n      \"endDate\": \"2021-06-15\",\r\n      \"ruleSetId\": \"169710991\"\r\n   }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=airbnb&method=getFutureReservations&account_id=5&listing_id=8",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "airbnb"
+										},
+										{
+											"key": "method",
+											"value": "getFutureReservations"
+										},
+										{
+											"key": "account_id",
+											"value": "5"
+										},
+										{
+											"key": "listing_id",
+											"value": "8"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Channels",
+					"item": [
+						{
+							"name": "getChannelNames",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=channels&method=getChannelNames",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "channels"
+										},
+										{
+											"key": "method",
+											"value": "getChannelNames"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getChannels",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=channels&method=getChannelNames",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "channels"
+										},
+										{
+											"key": "method",
+											"value": "getChannelNames"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateChannelPrices",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "dateFrom",
+											"value": "2021-03-01",
+											"type": "text"
+										},
+										{
+											"key": "dateTo",
+											"value": "2021-03-01",
+											"type": "text"
+										},
+										{
+											"key": "roomTypeId",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "roomRateType",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "103.8",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost/hoteliga/index.php?path=channels&method=updateChannelPrices",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"hoteliga",
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "path",
+											"value": "channels"
+										},
+										{
+											"key": "method",
+											"value": "updateChannelPrices"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
