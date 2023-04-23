@@ -89,7 +89,6 @@
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
             
-            // Ignore the response body and only return the HTTP status code
             curl_setopt($ch, CURLOPT_NOBODY, true);
             
             $response = curl_exec($ch);
@@ -97,7 +96,6 @@
             
             curl_close($ch);
             
-            // Check if the request was successful (status code 200-299)
             return ($http_status);
         }
         
